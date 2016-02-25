@@ -90,4 +90,16 @@ describe("FizzBuzz", function() {
 
   });
 
+  describe(".main", function() {
+
+    it("should call .sayUpTo with 100 as argument and print to console", function() {
+      var mainspy = sinon.spy(fb, "sayUpTo");
+      var logspy = sinon.spy(console, "log");
+      fb.main();
+      expect(mainspy).to.have.been.calledWith(100);
+      expect(logspy).to.have.been.calledOnce;
+    });
+
+  })
+
 });
