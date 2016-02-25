@@ -66,4 +66,14 @@ describe("FizzBuzz", function() {
       expect(fb.say(39)).to.equal("Fizz");
     });
 
+    it(".say should return the original input if not matched with any rules", function() {
+      expect(fb.say(1)).to.equal("1");
+      expect(fb.say(2)).to.equal("2");
+      expect(fb.say(4)).to.equal("4");
+      expect(fb.say(8)).to.equal("8");
+      expect(fb.say(16)).to.equal("16");
+      expect(fb.say(17)).to.equal("17");
+      expect(fb.say(19)).to.equal("19");
+    });
+
   });
