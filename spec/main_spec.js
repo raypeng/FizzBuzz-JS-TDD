@@ -30,4 +30,22 @@ describe("FizzBuzz", function() {
       expect(fb.say(28)).to.equal("Whizz");
     });
 
-});
+    it(".say should return FizzBuzz when input is multple of a, b", function() {
+      expect(fb.say(15)).to.equal("FizzBuzz");
+      expect(fb.say(45)).to.equal("FizzBuzz");
+    });
+
+    it(".say should return FizzWhizz when input is multple of a, c", function() {
+      expect(fb.say(21)).to.equal("FizzWhizz");
+      expect(fb.say(42)).to.equal("FizzWhizz");
+    });
+
+    it(".say should return BuzzWhizz when input is multple of b, c", function() {
+      expect(fb.say(70)).to.equal("BuzzWhizz");
+      expect(fb.say(140)).to.equal("BuzzWhizz");
+    });
+
+    it(".say should return FizzBuzzWhizz when input is multple of a, b, c", function() {
+      expect(fb.say(105)).to.equal("FizzBuzzWhizz");
+    });
+  });
