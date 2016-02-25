@@ -48,4 +48,22 @@ describe("FizzBuzz", function() {
     it(".say should return FizzBuzzWhizz when input is multple of a, b, c", function() {
       expect(fb.say(105)).to.equal("FizzBuzzWhizz");
     });
+
+    it(".say should return Fizz when input contains a", function() {
+      expect(fb.say(3)).to.equal("Fizz");
+      expect(fb.say(13)).to.equal("Fizz");
+      expect(fb.say(23)).to.equal("Fizz");
+      expect(fb.say(33)).to.equal("Fizz");
+      expect(fb.say(43)).to.equal("Fizz");
+      expect(fb.say(30)).to.equal("Fizz");
+      expect(fb.say(31)).to.equal("Fizz");
+      expect(fb.say(32)).to.equal("Fizz");
+      expect(fb.say(34)).to.equal("Fizz");
+      expect(fb.say(35)).to.equal("Fizz");
+      expect(fb.say(36)).to.equal("Fizz");
+      expect(fb.say(37)).to.equal("Fizz");
+      expect(fb.say(38)).to.equal("Fizz");
+      expect(fb.say(39)).to.equal("Fizz");
+    });
+
   });
